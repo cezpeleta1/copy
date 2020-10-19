@@ -2,7 +2,7 @@
 
 Group members:
 
-Ada Lovelace adalovelace@csu.fullerton.edu
 
-Charles Babbage charlesbab@csu.fullerton.edu
-
+Andrea Aguirre | andreeaa6@csu.fullerton.edu
+Manpreet Kaur Saini | mksaini12@csu.fullerton.edu
+Carlyle | 
