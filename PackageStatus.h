@@ -84,6 +84,7 @@ namespace PackageTracking {
     // Return a reference to the ShippingUpdate object that the cursor
     // is pointing at. The PackageStatus must not be empty.
     //
+    
     // If the PackageStatus is empty, throws std::logic_error.
     const ShippingUpdate& GetCursor() const;
 
@@ -93,7 +94,7 @@ namespace PackageTracking {
     //
     // If the PackageStatus is empty, throws std::logic_error.
     std::string DescribeCursorUpdate();
-    
+
     // Return a description of all ShippingUpdates prior to the cursor
     // (so not including the cursor update). Each update's description
     // follows the format of ShippingUpdate::Describe. The description
@@ -120,14 +121,22 @@ namespace PackageTracking {
     // The PackageStatus *may* be empty. If so, this function returns
     // an empty string.
     std::string DescribeAllUpdates();
-    
+
   private:
     // TODO: Add data members here.
     // Before submitting your assignment, delete all TODO comments
     // including this one.
+    PackageStatus *heading, *ending, *iterator;
+    std::string description_;
+    std::string location_;
+    // std::time_t timestamp_;
+    int Update; // number of updates
+    int setNext(PackageStatus* next);
+    int setPrev(PackageStatus* prev);
+    int
     std::string tracking_number_;
   };
-  
+
 }
 
 #endif
