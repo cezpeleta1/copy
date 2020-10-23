@@ -1,9 +1,3 @@
-////////////////////////////////////////////////////////////////////////////////
-// ShippingUpdate.cpp
-//
-// class ShippingUpdate
-////////////////////////////////////////////////////////////////////////////////
-
 #include "ShippingUpdate.h"
 
 namespace PackageTracking {
@@ -11,9 +5,7 @@ namespace PackageTracking {
   ShippingUpdate::ShippingUpdate() noexcept
   : timestamp_(0) { }
 
-  ShippingUpdate::ShippingUpdate(const std::string& description,
-				 const std::string& location,
-				 std::time_t timestamp) noexcept {
+  ShippingUpdate::ShippingUpdate(const std::string& description, const std::string& location, std::time_t timestamp) noexcept {
     description_ = description;
     location_ = location;
     timestamp_ = timestamp;

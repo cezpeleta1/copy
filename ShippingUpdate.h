@@ -1,8 +1,3 @@
-////////////////////////////////////////////////////////////////////////////////
-// ShippingUpdate.h
-//
-// class ShippingUpdate
-////////////////////////////////////////////////////////////////////////////////
 
 #ifndef SHIPPING_UPDATE_H
 #define SHIPPING_UPDATE_H
@@ -11,22 +6,12 @@
 #include <string> // std::string
 
 namespace PackageTracking {
-
-  // A shipping update represents one event in the delivery
-  // process. It has a description such as "Out for delivery"; a
-  // location such as "Fullerton, CA US"; and a timestamp, which is a
-  // Unix timestamp.
   class ShippingUpdate {
   public:
-
-    // Default constructor initializes description and location to
-    // empty strings, and timestamp to 0.
     ShippingUpdate() noexcept;
 
     // Initialization constructor
-    ShippingUpdate(const std::string& description,
-		   const std::string& location,
-		   std::time_t timestamp) noexcept;
+    ShippingUpdate(const std::string& description, const std::string& location, std::time_t timestamp) noexcept;
 
     // Accessors
     const std::string& Description() const noexcept;
